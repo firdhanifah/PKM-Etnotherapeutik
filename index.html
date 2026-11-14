@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research showcase: Etnotherapeutic communication based on Sundanese Trisilas values and resilience in lung cancer patients.">
+  <title>Etnotherapeutics | Research Showcase</title>
+  <style>
+    :root {
+      --navy: #142b4a; --blue: #315f91; --sky: #eaf1f8;
+      --ink: #263445; --muted: #667487; --line: #dce4ec;
+      --paper: #ffffff; --bg: #f5f7fa; --accent: #b9cee2;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink);
+      font: 16px/1.7 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .nav { background: rgba(255,255,255,.94); border-bottom: 1px solid var(--line);
+      position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px); }
+    .nav-inner { max-width: 1080px; margin: auto; padding: 14px 24px;
+      display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+    .brand { color: var(--navy); font-weight: 750; letter-spacing: .02em; }
+    .nav-links { display: flex; gap: 20px; flex-wrap: wrap; font-size: .9rem; }
+    .nav-links a { color: var(--muted); }
+    .wrap { max-width: 1080px; margin: auto; padding: 0 24px; }
+    .hero { padding: 86px 0 66px; background: linear-gradient(135deg, #edf3f9, #fff 72%); }
+    .eyebrow { color: var(--blue); text-transform: uppercase; letter-spacing: .14em;
+      font-size: .76rem; font-weight: 750; }
+    h1 { color: var(--navy); font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.1;
+      letter-spacing: -.045em; max-width: 850px; margin: 16px 0; }
+    .hero p { max-width: 760px; color: #536276; font-size: 1.1rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 25px; }
+    .tag { background: #fff; border: 1px solid var(--line); border-radius: 999px;
+      padding: 6px 12px; color: #52657a; font-size: .82rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn { display: inline-block; padding: 11px 17px; border-radius: 8px;
+      background: var(--navy); color: white; font-weight: 650; }
+    .btn.secondary { background: white; color: var(--navy); border: 1px solid var(--line); }
+    section { padding: 66px 0; }
+    .section-head { max-width: 720px; margin-bottom: 28px; }
+    h2 { color: var(--navy); font-size: 1.8rem; letter-spacing: -.025em; margin: 0 0 9px; }
+    h3 { color: var(--navy); margin: 0 0 8px; font-size: 1.1rem; }
+    .lead { color: var(--muted); margin: 0; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: -1px; }
+    .stat, .card { background: var(--paper); border: 1px solid var(--line);
+      border-radius: 13px; padding: 22px; }
+    .stat strong { display: block; color: var(--navy); font-size: 2rem; line-height: 1.2; }
+    .stat span { color: var(--muted); font-size: .9rem; }
+    .grid-2 { display: grid; grid-template-columns: 1.05fr .95fr; gap: 18px; }
+    .card p { margin: 7px 0 0; color: var(--muted); }
+    .soft { background: var(--sky); }
+    .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .value-num { color: var(--blue); font-size: .78rem; font-weight: 800; letter-spacing: .1em; }
+    .workflow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .step { border-top: 3px solid var(--accent); background: white; padding: 18px;
+      border-radius: 0 0 10px 10px; }
+    .step small { color: var(--blue); font-weight: 750; }
+    .step p { color: var(--muted); font-size: .92rem; margin-bottom: 0; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: white; }
+    table { border-collapse: collapse; width: 100%; min-width: 580px; }
+    th, td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+    th { background: #f0f4f8; color: var(--navy); font-size: .9rem; }
+    tr:last-child td { border-bottom: 0; }
+    .result-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+    .result-number { color: var(--blue); font-size: 2rem; font-weight: 800; line-height: 1.2; }
+    .note { border-left: 3px solid var(--blue); padding: 12px 16px; background: #f0f5fa;
+      color: #536276; font-size: .92rem; margin-top: 18px; }
+    .contribution { background: var(--navy); color: #eaf0f6; border-radius: 16px; padding: 28px; }
+    .contribution h2, .contribution h3 { color: white; }
+    .contribution p { color: #d2dce8; }
+    .footer { padding: 30px 0 45px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    @media (max-width: 760px) {
+      .nav-inner { align-items: flex-start; flex-direction: column; }
+      .grid-2, .values, .result-grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: 1fr; }
+      .workflow { grid-template-columns: 1fr 1fr; }
+      .hero { padding: 58px 0 48px; }
+    }
+    @media (max-width: 430px) { .workflow { grid-template-columns: 1fr; } .wrap { padding: 0 18px; } }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner wrap">
+      <a class="brand" href="#top">FH / RESEARCH</a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a><a href="#method">Method</a>
+        <a href="#analysis">Analysis</a><a href="#findings">Findings</a><a href="#role">My Role</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div class="eyebrow">Research project · 2025–2026</div>
+      <h1>Etnotherapeutic Communication & Patient Resilience</h1>
+      <p>
+        A research project exploring how Sundanese local wisdom values—Silih Asih,
+        Silih Asah, and Silih Asuh—are reflected in therapeutic nurse communication
+        and relate to resilience among lung cancer patients undergoing chemotherapy.
+      </p>
+      <div class="tags">
+        <span class="tag">Statistical Analysis</span><span class="tag">Bayesian Ordinal Logistic Regression</span>
+        <span class="tag">Health Research</span><span class="tag">Sundanese Local Wisdom</span>
+      </div>
+      <div class="actions">
+        <a class="btn" href="https://doi.org/10.24912/v18i1.35540" target="_blank" rel="noreferrer">Read published article ↗</a>
+        <a class="btn secondary" href="#analysis">Explore the analysis</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="overview">
+      <div class="wrap">
+        <div class="stats">
+          <div class="stat"><strong>20</strong><span>Research participants</span></div>
+          <div class="stat"><strong>48</strong><span>Modified CD-RISC questionnaire items</span></div>
+          <div class="stat"><strong>3</strong><span>Trisilas values examined</span></div>
+        </div>
+        <div class="section-head" style="margin-top:52px">
+          <div class="eyebrow">01 / Project overview</div>
+          <h2>Research background</h2>
+          <p class="lead">The study looks beyond clinical treatment and considers the role of communication in supporting patients’ psychological resilience.</p>
+        </div>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Research context</h3>
+            <p>Patients undergoing chemotherapy may face physical and psychological challenges. The research examines therapeutic communication grounded in local cultural values as a contextual approach to patient care.</p>
+          </article>
+          <article class="card">
+            <h3>Research objective</h3>
+            <p>To examine the influence of Silih Asah, Silih Asih, and Silih Asuh in nurse communication on resilience levels among lung cancer patients undergoing chemotherapy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft" id="framework">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">02 / Conceptual framework</div>
+          <h2>Understanding Trisilas</h2>
+          <p class="lead">The three values frame different dimensions of therapeutic interaction.</p>
+        </div>
+        <div class="values">
+          <article class="card"><div class="value-num">01 · AFFECTIVE</div><h3>Silih Asih</h3><p>Mutual care, empathy, and compassion. In nursing communication, this includes listening attentively, showing concern, and offering emotional support.</p></article>
+          <article class="card"><div class="value-num">02 · COGNITIVE</div><h3>Silih Asah</h3><p>Mutual learning and knowledge-building. This is reflected in clear, educational communication that helps patients understand treatment and their experiences.</p></article>
+          <article class="card"><div class="value-num">03 · SUPPORTIVE</div><h3>Silih Asuh</h3><p>Mutual guidance, care, and protection. In practice, this includes attention to patients’ comfort, safety, and practical needs.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="method">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">03 / Research methodology</div>
+          <h2>Study design & data</h2>
+          <p class="lead">A one-group pretest–posttest study, with resilience measured before and after the Trisilas-based therapeutic communication intervention.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><th>Research design</th><td>One-Group Pretest–Posttest Design</td></tr>
+              <tr><th>Participants</th><td>20 lung cancer patients selected through total sampling based on the study’s inclusion criteria</td></tr>
+              <tr><th>Age range</th><td>31–65 years</td></tr>
+              <tr><th>Instrument</th><td>Modified Connor-Davidson Resilience Scale (CD-RISC), 48 Likert-scale items with four response options</td></tr>
+              <tr><th>Predictor variables</th><td>Silih Asah, Silih Asih, and Silih Asuh</td></tr>
+              <tr><th>Response variable</th><td>Resilience level (ordinal)</td></tr>
+              <tr><th>Statistical method</th><td>Bayesian ordinal logistic regression (cumulative logit model)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note">The article describes data collection through individual questionnaire completion and observation of nurses’ therapeutic communication across pre-interaction, orientation, working, and termination stages.</div>
+      </div>
+    </section>
+
+    <section class="soft" id="analysis">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">04 / Analysis workflow</div>
+          <h2>From questionnaire data to model interpretation</h2>
+          <p class="lead">This section summarizes the analysis stages described in the article. The supporting notebook is only partially available, so the page does not claim to reproduce the complete computational workflow.</p>
+        </div>
+        <div class="workflow">
+          <div class="step"><small>STEP 01</small><h3>Data collection</h3><p>Pretest and posttest CD-RISC questionnaire responses, supported by observation of nurse–patient communication.</p></div>
+          <div class="step"><small>STEP 02</small><h3>Variable setup</h3><p>Silih Asah, Silih Asih, and Silih Asuh as predictors; resilience level as the ordinal response.</p></div>
+          <div class="step"><small>STEP 03</small><h3>Bayesian model</h3><p>Cumulative ordinal logistic regression with Normal priors as specified in the published article.</p></div>
+          <div class="step"><small>STEP 04</small><h3>Interpretation</h3><p>Review coefficient estimates and 95% intervals to compare the direction and strength of the three dimensions.</p></div>
+        </div>
+        <div class="card" style="margin-top:18px">
+          <h3>Notebook & analysis materials</h3>
+          <p>A partial analysis notebook can be added here when available. Only code and outputs that can be checked against the research workflow should be published. No patient-level records or identifiable information should be uploaded.</p>
+          <p style="margin-top:12px"><strong>Suggested file:</strong> <code>analysis/research-analysis.ipynb</code> <span style="color:#667487">(add after reviewing and removing any sensitive data)</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="findings">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">05 / Key findings</div>
+          <h2>Empathy and learning showed the strongest associations</h2>
+          <p class="lead">The published Bayesian ordinal regression results report positive estimates for all three dimensions, with different levels of evidence.</p>
+        </div>
+        <div class="result-grid">
+          <article class="card">
+            <h3>Silih Asih · Empathy</h3><div class="result-number">β = 1.15</div>
+            <p>95% interval: 0.36–2.07. The article identifies empathy as the dimension with the strongest estimated effect. It reports an approximately 3.16-fold higher tendency toward a higher resilience level.</p>
+          </article>
+          <article class="card">
+            <h3>Silih Asah · Mutual learning</h3><div class="result-number">β = 1.07</div>
+            <p>95% interval: 0.31–2.04. Educational communication was associated with an approximately 2.92-fold higher tendency toward a higher resilience level.</p>
+          </article>
+          <article class="card">
+            <h3>Silih Asuh · Guidance & protection</h3><div class="result-number">β = 0.55</div>
+            <p>95% interval: −0.26–1.50. The estimate was positive, but the article reports that this dimension was not statistically significant.</p>
+          </article>
+          <article class="card">
+            <h3>Overall interpretation</h3><p>The findings highlight the importance of both affective support and educational communication. Silih Asuh remains part of holistic care, even though its estimated association was not statistically significant in this study.</p>
+          </article>
+        </div>
+        <div class="note"><strong>How to read the results:</strong> β values and 95% intervals above are transcribed from the article’s Bayesian model tables. The 3.16× and 2.92× figures are the article’s reported interpretations. They describe relative odds/tendency toward a higher ordinal resilience level, not an absolute probability or a percentage-point increase.</div>
+      </div>
+    </section>
+
+    <section class="soft" id="role">
+      <div class="wrap">
+        <div class="contribution">
+          <div class="eyebrow" style="color:#b9cee2">06 / Individual contribution</div>
+          <h2>My role: Statistical analysis</h2>
+          <p>As part of the multidisciplinary research team, my contribution focused on the statistical analysis aspect of the project, including involvement in the analytical method and interpretation of results. The research itself was conducted collaboratively by the full team.</p>
+          <p style="margin-bottom:0">The project brought together perspectives from communication science, medicine, statistics, and psychology to study a culturally grounded approach to therapeutic communication.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publication">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">07 / Publication</div>
+          <h2>Published research</h2>
+          <p class="lead">The research was published in Jurnal Komunikasi, Volume 18, Number 1, July 2026, pages 51–70.</p>
+        </div>
+        <div class="card">
+          <h3>Etnotherapeutic: Nurse Communication Intervention Based on Silih Asah and Silih Asih to Enhance Resiliency in Lung Cancer Patients</h3>
+          <p>Muthi Khairunnisa Aiman, Palito Berliano, Bilal Ali Arsy, Firdha Hanifah Suparlan, Aena Nur Safitri, and Tri Nur Aini Noviar.</p>
+          <p><strong>DOI:</strong> <a href="https://doi.org/10.24912/v18i1.35540" target="_blank" rel="noreferrer">10.24912/v18i1.35540 ↗</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>Research portfolio</strong> · Firdha Hanifah Suparlan</p>
+      <p>Content on this page is a portfolio summary of the published team research. For the complete study details, methods, references, and discussion, please refer to the journal article.</p>
+    </div>
+  </footer>
+</body>
+</html>
