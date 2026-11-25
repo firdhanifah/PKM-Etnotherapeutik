@@ -98,7 +98,7 @@
       <div class="eyebrow"> Proyek Riset · 2025</div>
       <h1>Etnotherapeutik: Intervensi Komunikasi Perawat Berbasis Silih Asah dan Silih Asih bagi Resiliensi Kanker Paru</h1>
       <p>
-        Penelitian ini mengkaji bagaimana nilai-nilai kearifan lokal Sunda, yaitu Silih Asih, Silih Asah, dan Silih Asuh, tercermin dalam komunikasi terapeutik perawat serta kaitannya dengan tingkat resiliensi pasien kanker paru yang menjalani kemoterapi.
+        Riset ini mengkaji bagaimana nilai-nilai kearifan lokal Sunda, yaitu Silih Asih, Silih Asah, dan Silih Asuh, tercermin dalam komunikasi terapeutik perawat serta kaitannya dengan tingkat resiliensi pasien kanker paru yang menjalani kemoterapi.
       </p>
       <div class="tags">
         <span class="tag">Analisis Statistik</span><span class="tag">Regresi Logistik Ordinal Bayesian</span>
@@ -121,13 +121,13 @@
         </div>
         <div class="section-head" style="margin-top:52px">
           <div class="eyebrow">01 / Gambaran Riset</div>
-          <h2>Latar Belakang Penelitian</h2>
-          <p class="lead">Penelitian ini tidak hanya berfokus pada aspek klinis pengobatan, tetapi juga mempertimbangkan peran komunikasi dalam mendukung resiliensi psikologis pasien.</p>
+          <h2>Latar Belakang Riset</h2>
+          <p class="lead">Riset ini tidak hanya berfokus pada aspek klinis pengobatan, tetapi juga mempertimbangkan peran komunikasi dalam mendukung resiliensi psikologis pasien.</p>
         </div>
         <div class="grid-2">
           <article class="card">
-            <h3>Konteks Penelitian</h3>
-            <p>Pasien yang menjalani kemoterapi dapat menghadapi berbagai tantangan fisik dan psikologis. Penelitian ini mengkaji komunikasi terapeutik yang berlandaskan nilai-nilai budaya lokal sebagai pendekatan kontekstual dalam perawatan pasien.</p>
+            <h3>Konteks Riset</h3>
+            <p>Pasien yang menjalani kemoterapi dapat menghadapi berbagai tantangan fisik dan psikologis. Riset ini mengkaji komunikasi terapeutik yang berlandaskan nilai-nilai budaya lokal sebagai pendekatan kontekstual dalam perawatan pasien.</p>
           </article>
           <article class="card">
             <h3>Tujuan Penelitian</h3>
@@ -170,18 +170,18 @@
 <section id="method">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">03 / Metodologi Penelitian</div>
-      <h2>Desain Penelitian & Data</h2>
-      <p class="lead">Penelitian menggunakan desain one-group pretest–posttest, dengan pengukuran resiliensi sebelum dan sesudah intervensi komunikasi terapeutik berbasis Trisilas.</p>
+      <div class="eyebrow">03 / Metodologi Riset</div>
+      <h2>Desain Riset & Data</h2>
+      <p class="lead">Riset menggunakan desain one-group pretest–posttest, dengan pengukuran resiliensi sebelum dan sesudah intervensi komunikasi terapeutik berbasis Trisilas.</p>
     </div>
 
     <div class="table-wrap">
       <table>
         <tbody>
-          <tr><th>Desain penelitian</th><td>One-Group Pretest–Posttest Design</td></tr>
+          <tr><th>Desain riset</th><td>One-Group Pretest–Posttest Design</td></tr>
           <tr><th>Partisipan</th><td>20 pasien kanker paru yang dipilih melalui teknik total sampling berdasarkan kriteria inklusi penelitian</td></tr>
           <tr><th>Rentang usia</th><td>31–65 tahun</td></tr>
-          <tr><th>Instrumen</th><td>Modified Connor-Davidson Resilience Scale (CD-RISC), terdiri dari 48 item skala Likert dengan empat pilihan respons</td></tr>
+          <tr><th>Instrumen</th><td><i>Modified Connor-Davidson Resilience Scale</i> (CD-RISC), terdiri dari 48 item skala Likert dengan empat pilihan respons</td></tr>
           <tr><th>Variabel prediktor</th><td>Silih Asah, Silih Asih, dan Silih Asuh</td></tr>
           <tr><th>Variabel respons</th><td>Tingkat resiliensi (ordinal)</td></tr>
           <tr><th>Metode statistik</th><td>Regresi logistik ordinal Bayesian (cumulative logit model)</td></tr>
@@ -189,58 +189,89 @@
       </table>
     </div>
 
-    <div class="note">Artikel menjelaskan bahwa pengumpulan data dilakukan melalui pengisian kuesioner secara individual serta observasi komunikasi terapeutik perawat pada tahap pra-interaksi, orientasi, kerja, dan terminasi.</div>
+    <div class="note">Pengumpulan data dilakukan melalui pengisian kuesioner secara individual serta observasi komunikasi terapeutik perawat pada tahap pra-interaksi, orientasi, kerja, dan terminasi.</div>
   </div>
 </section>
 
     <section class="soft" id="analysis">
-      <div class="wrap">
-        <div class="section-head">
-          <div class="eyebrow">04 / Analysis workflow</div>
-          <h2>From questionnaire data to model interpretation</h2>
-          <p class="lead">This section summarizes the analysis stages described in the article. The supporting notebook is only partially available, so the page does not claim to reproduce the complete computational workflow.</p>
-        </div>
-        <div class="workflow">
-          <div class="step"><small>STEP 01</small><h3>Data collection</h3><p>Pretest and posttest CD-RISC questionnaire responses, supported by observation of nurse–patient communication.</p></div>
-          <div class="step"><small>STEP 02</small><h3>Variable setup</h3><p>Silih Asah, Silih Asih, and Silih Asuh as predictors; resilience level as the ordinal response.</p></div>
-          <div class="step"><small>STEP 03</small><h3>Bayesian model</h3><p>Cumulative ordinal logistic regression with Normal priors as specified in the published article.</p></div>
-          <div class="step"><small>STEP 04</small><h3>Interpretation</h3><p>Review coefficient estimates and 95% intervals to compare the direction and strength of the three dimensions.</p></div>
-        </div>
-        <div class="card" style="margin-top:18px">
-          <h3>Notebook & analysis materials</h3>
-          <p>A partial analysis notebook can be added here when available. Only code and outputs that can be checked against the research workflow should be published. No patient-level records or identifiable information should be uploaded.</p>
-          <p style="margin-top:12px"><strong>Suggested file:</strong> <code>analysis/research-analysis.ipynb</code> <span style="color:#667487">(add after reviewing and removing any sensitive data)</span></p>
-        </div>
-      </div>
-    </section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">04 / Alur Analisis</div>
+      <h2>Dari Data Kuesioner hingga Interpretasi Model</h2>
+      <p class="lead">Bagian ini merangkum tahapan analisis yang dijelaskan dalam artikel. Notebook pendukung hanya tersedia sebagian, sehingga halaman ini tidak mengklaim mereproduksi keseluruhan alur komputasi penelitian.</p>
+    </div>
 
-    <section id="findings">
-      <div class="wrap">
-        <div class="section-head">
-          <div class="eyebrow">05 / Key findings</div>
-          <h2>Empathy and learning showed the strongest associations</h2>
-          <p class="lead">The published Bayesian ordinal regression results report positive estimates for all three dimensions, with different levels of evidence.</p>
-        </div>
-        <div class="result-grid">
-          <article class="card">
-            <h3>Silih Asih · Empathy</h3><div class="result-number">β = 1.15</div>
-            <p>95% interval: 0.36–2.07. The article identifies empathy as the dimension with the strongest estimated effect. It reports an approximately 3.16-fold higher tendency toward a higher resilience level.</p>
-          </article>
-          <article class="card">
-            <h3>Silih Asah · Mutual learning</h3><div class="result-number">β = 1.07</div>
-            <p>95% interval: 0.31–2.04. Educational communication was associated with an approximately 2.92-fold higher tendency toward a higher resilience level.</p>
-          </article>
-          <article class="card">
-            <h3>Silih Asuh · Guidance & protection</h3><div class="result-number">β = 0.55</div>
-            <p>95% interval: −0.26–1.50. The estimate was positive, but the article reports that this dimension was not statistically significant.</p>
-          </article>
-          <article class="card">
-            <h3>Overall interpretation</h3><p>The findings highlight the importance of both affective support and educational communication. Silih Asuh remains part of holistic care, even though its estimated association was not statistically significant in this study.</p>
-          </article>
-        </div>
-        <div class="note"><strong>How to read the results:</strong> β values and 95% intervals above are transcribed from the article’s Bayesian model tables. The 3.16× and 2.92× figures are the article’s reported interpretations. They describe relative odds/tendency toward a higher ordinal resilience level, not an absolute probability or a percentage-point increase.</div>
+    <div class="workflow">
+      <div class="step">
+        <small>TAHAP 01</small>
+        <h3>Pengumpulan Data</h3>
+        <p>Respons kuesioner CD-RISC pretest dan posttest, yang didukung oleh observasi komunikasi perawat dan pasien.</p>
       </div>
-    </section>
+
+      <div class="step">
+        <small>TAHAP 02</small>
+        <h3>Penentuan Variabel</h3>
+        <p>Silih Asah, Silih Asih, dan Silih Asuh sebagai variabel prediktor; tingkat resiliensi sebagai variabel respons ordinal.</p>
+      </div>
+
+      <div class="step">
+        <small>TAHAP 03</small>
+        <h3>Pemodelan Bayesian</h3>
+        <p>Regresi logistik ordinal kumulatif dengan prior Normal.</p>
+      </div>
+
+      <div class="step">
+        <small>TAHAP 04</small>
+        <h3>Interpretasi</h3>
+        <p>Meninjau estimasi koefisien dan interval 95% untuk membandingkan arah dan kekuatan hubungan dari ketiga dimensi.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>Notebook & Materi Analisis</h3>
+      <p style="margin-top:12px"><strong>File yang disarankan:</strong> <code>analysis/research-analysis.ipynb</code> <span style="color:#667487">(ditambahkan setelah ditinjau dan dipastikan tidak mengandung data sensitif)</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="findings">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">05 / Temuan Utama</div>
+      <h2>Empati dan Pembelajaran Menunjukkan Hubungan Terkuat</h2>
+      <p class="lead">Hasil regresi ordinal Bayesian yang dipublikasikan menunjukkan estimasi positif pada ketiga dimensi, dengan tingkat bukti yang berbeda.</p>
+    </div>
+
+    <div class="result-grid">
+      <article class="card">
+        <h3>Silih Asih · Empati</h3>
+        <div class="result-number">β = 1.15</div>
+        <p>Interval 95%: 0.36–2.07. Artikel mengidentifikasi empati sebagai dimensi dengan estimasi pengaruh terkuat. Hasilnya menunjukkan kecenderungan sekitar 3,16 kali lebih tinggi terhadap tingkat resiliensi yang lebih tinggi.</p>
+      </article>
+
+      <article class="card">
+        <h3>Silih Asah · Pembelajaran</h3>
+        <div class="result-number">β = 1.07</div>
+        <p>Interval 95%: 0.31–2.04. Komunikasi edukatif berkaitan dengan kecenderungan sekitar 2,92 kali lebih tinggi terhadap tingkat resiliensi yang lebih tinggi.</p>
+      </article>
+
+      <article class="card">
+        <h3>Silih Asuh · Bimbingan & Perlindungan</h3>
+        <div class="result-number">β = 0.55</div>
+        <p>Interval 95%: −0.26–1.50. Estimasi menunjukkan arah positif, tetapi artikel melaporkan bahwa dimensi ini tidak signifikan secara statistik.</p>
+      </article>
+
+      <article class="card">
+        <h3>Interpretasi Keseluruhan</h3>
+        <p>Temuan menyoroti pentingnya dukungan afektif dan komunikasi edukatif. Silih Asuh tetap menjadi bagian dari perawatan holistik, meskipun estimasi hubungannya tidak signifikan secara statistik dalam penelitian ini.</p>
+      </article>
+    </div>
+
+    <div class="note">
+      <strong>Cara membaca hasil:</strong> Nilai β dan interval 95% di atas disalin dari tabel model Bayesian dalam artikel. Angka 3,16× dan 2,92× merupakan interpretasi yang dilaporkan dalam artikel. Angka tersebut menggambarkan odds atau kecenderungan relatif menuju tingkat resiliensi ordinal yang lebih tinggi, bukan probabilitas absolut maupun peningkatan dalam satuan persentase.
+    </div>
+  </div>
+</section>
 
     <section class="soft" id="role">
       <div class="wrap">
