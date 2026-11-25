@@ -273,14 +273,191 @@
   </div>
 </section>
 
-    <section class="soft" id="role">
+    
+<section class="soft" id="role">
   <div class="wrap">
-    <div class="contribution">
-      <div class="eyebrow" style="color:#b9cee2">06 / Kontribusi Individu</div>
-      <h2>Peran Saya: Analisis Statistik</h2>
-      <p>Sebagai bagian dari tim penelitian multidisiplin, kontribusi saya berfokus pada aspek analisis statistik dalam penelitian, termasuk keterlibatan dalam penentuan metode analisis dan interpretasi hasil. Penelitian ini secara keseluruhan dilaksanakan secara kolaboratif oleh seluruh anggota tim.</p>
-      <p style="margin-bottom:0">Penelitian ini menggabungkan perspektif ilmu komunikasi, kedokteran, statistika, dan psikologi untuk mengkaji pendekatan komunikasi terapeutik yang berlandaskan nilai budaya lokal.</p>
+
+    <div class="section-head">
+      <div class="eyebrow">06 / Kontribusi Individu</div>
+      <h2>Kontribusi dalam Analisis Statistik</h2>
+      <p class="lead">
+        Sebagai bagian dari tim penelitian multidisiplin, kontribusi saya berfokus
+        pada analisis statistik, termasuk keterlibatan dalam penentuan metode
+        analisis serta interpretasi hasil. Penelitian ini dilaksanakan secara
+        kolaboratif oleh seluruh anggota tim.
+      </p>
     </div>
+
+    <div class="grid-2">
+      <article class="card">
+        <h3>Metode Analisis</h3>
+        <p>
+          Keterlibatan dalam analisis menggunakan regresi logistik ordinal
+          Bayesian (cumulative logit model) untuk mengkaji hubungan tiga
+          dimensi Trisilas dengan tingkat resiliensi pasien.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Interpretasi Hasil</h3>
+        <p>
+          Meninjau estimasi koefisien dan interval 95% untuk memahami arah
+          hubungan, besaran estimasi, serta perbedaan hasil pada setiap
+          dimensi Trisilas.
+        </p>
+      </article>
+    </div>
+
+    <div class="section-head" style="margin-top:48px">
+      <div class="eyebrow">Bukti Analisis</div>
+      <h2>Estimasi Koefisien Model</h2>
+      <p class="lead">
+        Visualisasi hasil model regresi logistik ordinal Bayesian yang
+        dilaporkan dalam artikel, disajikan kembali untuk keperluan
+        portofolio.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Dimensi</th>
+              <th>Estimasi (β)</th>
+              <th>Interval 95%</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Silih Asih</td>
+              <td>1.15</td>
+              <td>0.36–2.07</td>
+            </tr>
+            <tr>
+              <td>Silih Asah</td>
+              <td>1.07</td>
+              <td>0.31–2.04</td>
+            </tr>
+            <tr>
+              <td>Silih Asuh</td>
+              <td>0.55</td>
+              <td>−0.26–1.50</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>Coefficient Plot</h3>
+      <p>
+        Perbandingan estimasi koefisien dan interval 95% dari ketiga
+        dimensi Trisilas.
+      </p>
+
+      <div style="width:100%;overflow-x:auto">
+        <svg viewBox="0 0 760 290"
+             xmlns="http://www.w3.org/2000/svg"
+             style="width:100%;min-width:520px;height:auto">
+
+          <!-- Grid and axis -->
+          <g stroke="#D9E2D2" stroke-width="1">
+            <line x1="250" y1="40" x2="250" y2="220"/>
+            <line x1="329" y1="40" x2="329" y2="220"/>
+            <line x1="409" y1="40" x2="409" y2="220"/>
+            <line x1="489" y1="40" x2="489" y2="220"/>
+            <line x1="569" y1="40" x2="569" y2="220"/>
+            <line x1="649" y1="40" x2="649" y2="220"/>
+          </g>
+
+          <!-- Zero reference line -->
+          <line x1="329" y1="35" x2="329" y2="220"
+                stroke="#68776B" stroke-width="2"
+                stroke-dasharray="5 5"/>
+
+          <!-- Labels -->
+          <g fill="#283A35" font-size="15">
+            <text x="20" y="85">Silih Asih</text>
+            <text x="20" y="145">Silih Asah</text>
+            <text x="20" y="205">Silih Asuh</text>
+          </g>
+
+          <!-- Silih Asih: 0.36–2.07, beta 1.15 -->
+          <g stroke="#81964F" stroke-width="4" stroke-linecap="round">
+            <line x1="386" y1="80" x2="660" y2="80"/>
+          </g>
+          <circle cx="433" cy="80" r="7" fill="#81964F"/>
+          <text x="433" y="65" text-anchor="middle"
+                font-size="13" fill="#283A35">1.15</text>
+
+          <!-- Silih Asah: 0.31–2.04, beta 1.07 -->
+          <g stroke="#356B70" stroke-width="4" stroke-linecap="round">
+            <line x1="378" y1="140" x2="655" y2="140"/>
+          </g>
+          <circle cx="420" cy="140" r="7" fill="#356B70"/>
+          <text x="420" y="125" text-anchor="middle"
+                font-size="13" fill="#283A35">1.07</text>
+
+          <!-- Silih Asuh: -0.26–1.50, beta 0.55 -->
+          <g stroke="#68776B" stroke-width="4" stroke-linecap="round">
+            <line x1="288" y1="200" x2="569" y2="200"/>
+          </g>
+          <circle cx="417" cy="200" r="7" fill="#68776B"/>
+          <text x="417" y="185" text-anchor="middle"
+                font-size="13" fill="#283A35">0.55</text>
+
+          <!-- Axis -->
+          <line x1="250" y1="220" x2="680" y2="220"
+                stroke="#68776B" stroke-width="1.5"/>
+
+          <g fill="#68776B" font-size="12" text-anchor="middle">
+            <text x="250" y="242">−0.5</text>
+            <text x="329" y="242">0</text>
+            <text x="409" y="242">0.5</text>
+            <text x="489" y="242">1.0</text>
+            <text x="569" y="242">1.5</text>
+            <text x="649" y="242">2.0</text>
+          </g>
+
+          <text x="465" y="275" text-anchor="middle"
+                font-size="13" fill="#68776B">
+            Estimasi koefisien (β)
+          </text>
+        </svg>
+      </div>
+
+      <p style="margin-top:16px">
+        <strong>Interpretasi:</strong> Silih Asih dan Silih Asah memiliki
+        interval 95% yang berada di atas nol, sedangkan interval Silih
+        Asuh mencakup nol.
+      </p>
+
+      <div class="note">
+        Visualisasi dibuat untuk portofolio berdasarkan nilai hasil model
+        yang dilaporkan dalam artikel publikasi, bukan merupakan visualisasi
+        asli dari proses analisis penelitian.
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>Materi Pendukung</h3>
+      <p>
+        Notebook analisis yang tersedia dapat digunakan sebagai materi
+        pendukung untuk menunjukkan sebagian proses analisis statistik.
+      </p>
+      <p>
+        <strong>Materi:</strong> Notebook analisis (parsial)
+      </p>
+      <p>
+        <span style="color:#667487">
+          Materi ditampilkan berdasarkan ketersediaan dokumentasi
+          analisis dan tidak merepresentasikan keseluruhan proses
+          komputasi penelitian.
+        </span>
+      </p>
+    </div>
+
   </div>
 </section>
 
